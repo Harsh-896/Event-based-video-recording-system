@@ -7,24 +7,37 @@ This project allows you to record video streams, detect events (e.g. Vehicle or 
 
 ## 📂 Project Structure
 
-Video_recorder_system/
-├── source_code/
-│ ├── main.py # Entry point for the system
-│ ├── app.py # Web application (Flask)
-│ ├── video_buffer.py # Handles video buffering
-│ ├── event_detector.py # Detects events (motion/person)
-│ ├── metadata_manager.py # Stores and manages metadata
-│ ├── cli_interface.py # Command-line interface
-│ ├── config.py # Configuration settings
-│ ├── requirements.txt # Python dependencies
-│ ├── Procfile # Deployment process (Heroku)
-│ ├── runtime.txt # Runtime version info
-│ └── templates/ # HTML templates
-│ ├── index.html
-│ ├── recordings.html
-│ └── settings.html
-
-##🚀 Features
+video_recorder_system/
+├── 📁 source_code/
+│   ├── main.py
+│   ├── web_app.py
+│   ├── video_buffer.py
+│   ├── event_detector.py
+│   ├── metadata_manager.py
+│   ├── cli_interface.py
+│   ├── config.py
+│   ├── requirements.txt
+│   ├── Procfile
+│   ├── runtime.txt
+│   └── templates/
+│       ├── index.html
+│       ├── recordings.html
+│       └── settings.html
+├── 📁 demo_materials/
+│   ├── demo_video.mp4
+│   ├── screenshots/
+│   ├── sample_recordings/ (optional)
+│   └── system_demo.gif
+├── 📁 documentation/
+│   ├── README.md
+│   ├── SETUP_GUIDE.md
+│   ├── API_DOCUMENTATION.md
+│   └── DEPLOYMENT_GUIDE.md
+└── 📁 deployment/
+    ├── docker-compose.yml
+    ├── Dockerfile
+    └── railway_deploy.sh
+#🚀 Features
 - Record video streams
 - Event detection (e.g., person detected)
 - Save & manage video recordings

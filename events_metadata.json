@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "filename": "event_20250928_154610_vehicle_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_154610_vehicle_detected.mp4",
+    "timestamp": "2025-09-28T15:46:10.694231",
+    "duration": 22.65,
+    "frames_count": 453,
+    "file_size": 2.26,
+    "event": {
+      "type": "vehicle_detected",
+      "confidence": 0.78,
+      "detection_id": "evt_1759054570",
+      "model_version": "YOLOv8-mock",
+      "bbox": {
+        "x": 0.155,
+        "y": 0.163,
+        "width": 0.288,
+        "height": 0.258
+      }
+    },
+    "gps": {
+      "latitude": 28.613882,
+      "longitude": 77.20988
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T15:46:28.232932"
+  },
+  {
+    "id": 2,
+    "filename": "event_20250928_154723_person_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_154723_person_detected.mp4",
+    "timestamp": "2025-09-28T15:47:23.635757",
+    "duration": 16.0,
+    "frames_count": 320,
+    "file_size": 1.82,
+    "event": {
+      "type": "person_detected",
+      "confidence": 0.87,
+      "detection_id": "manual_evt_1759054643",
+      "model_version": "YOLOv8-mock-manual",
+      "bbox": {
+        "x": 0.136,
+        "y": 0.594,
+        "width": 0.25,
+        "height": 0.104
+      }
+    },
+    "gps": {
+      "latitude": 28.61462,
+      "longitude": 77.209499
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T15:47:27.296104"
+  },
+  {
+    "id": 3,
+    "filename": "event_20250928_154723_person_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_154723_person_detected.mp4",
+    "timestamp": "2025-09-28T15:47:23.291480",
+    "duration": 16.05,
+    "frames_count": 321,
+    "file_size": 1.86,
+    "event": {
+      "type": "person_detected",
+      "confidence": 0.83,
+      "detection_id": "manual_evt_1759054643",
+      "model_version": "YOLOv8-mock-manual",
+      "bbox": {
+        "x": 0.562,
+        "y": 0.38,
+        "width": 0.186,
+        "height": 0.207
+      }
+    },
+    "gps": {
+      "latitude": 28.613894,
+      "longitude": 77.20875
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T15:47:37.325981"
+  },
+  {
+    "id": 4,
+    "filename": "event_20250928_160104_accident_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_160104_accident_detected.mp4",
+    "timestamp": "2025-09-28T16:01:04.980913",
+    "duration": 23.5,
+    "frames_count": 470,
+    "file_size": 3.04,
+    "event": {
+      "type": "accident_detected",
+      "confidence": 0.96,
+      "detection_id": "evt_1759055464",
+      "model_version": "YOLOv8-mock",
+      "bbox": {
+        "x": 0.644,
+        "y": 0.17,
+        "width": 0.155,
+        "height": 0.154
+      }
+    },
+    "gps": {
+      "latitude": 28.614384,
+      "longitude": 77.209052
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T16:01:21.063970"
+  },
+  {
+    "id": 5,
+    "filename": "event_20250928_161508_vehicle_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_161508_vehicle_detected.mp4",
+    "timestamp": "2025-09-28T16:15:08.350101",
+    "duration": 30.0,
+    "frames_count": 600,
+    "file_size": 2.74,
+    "event": {
+      "type": "vehicle_detected",
+      "confidence": 0.77,
+      "detection_id": "evt_1759056308",
+      "model_version": "YOLOv8-mock",
+      "bbox": {
+        "x": 0.339,
+        "y": 0.134,
+        "width": 0.162,
+        "height": 0.289
+      }
+    },
+    "gps": {
+      "latitude": 28.614288,
+      "longitude": 77.208918
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T16:15:35.653366"
+  },
+  {
+    "id": 6,
+    "filename": "event_20250928_161541_person_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_161541_person_detected.mp4",
+    "timestamp": "2025-09-28T16:15:41.533739",
+    "duration": 19.55,
+    "frames_count": 391,
+    "file_size": 1.37,
+    "event": {
+      "type": "person_detected",
+      "confidence": 0.77,
+      "detection_id": "manual_evt_1759056341",
+      "model_version": "YOLOv8-mock-manual",
+      "bbox": {
+        "x": 0.696,
+        "y": 0.404,
+        "width": 0.155,
+        "height": 0.253
+      }
+    },
+    "gps": {
+      "latitude": 28.614183,
+      "longitude": 77.208865
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T16:15:52.718361"
+  },
+  {
+    "id": 7,
+    "filename": "event_20250928_161544_person_detected.mp4",
+    "filepath": "C:\\Users\\270356\\Downloads\\video_recorder\\recordings\\event_20250928_161544_person_detected.mp4",
+    "timestamp": "2025-09-28T16:15:44.875577",
+    "duration": 17.65,
+    "frames_count": 353,
+    "file_size": 1.23,
+    "event": {
+      "type": "person_detected",
+      "confidence": 0.75,
+      "detection_id": "manual_evt_1759056344",
+      "model_version": "YOLOv8-mock-manual",
+      "bbox": {
+        "x": 0.523,
+        "y": 0.575,
+        "width": 0.159,
+        "height": 0.217
+      }
+    },
+    "gps": {
+      "latitude": 28.614676,
+      "longitude": 77.208035
+    },
+    "recording_info": {
+      "fps": 20,
+      "resolution": "640x480",
+      "codec": "mp4v",
+      "buffer_seconds": 15,
+      "post_event_seconds": 15
+    },
+    "created_at": "2025-09-28T16:16:02.766915"
+  }
+]

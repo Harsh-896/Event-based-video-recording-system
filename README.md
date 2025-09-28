@@ -35,15 +35,16 @@ video_recorder_system/
     ├── docker-compose.yml
     ├── Dockerfile
     └── railway_deploy.sh
----
+```
 
-#🚀 Features
-- Record video streams
-- Event detection (e.g., person detected)
-- Save & manage video recordings
-- Metadata storage
-- Web dashboard to view and manage recordings
-- Configurable settings
+# Core Components
+-Video Buffer System: Continuous 15-second circular buffer using efficient deque implementation
+-AI Event Detection: Mock YOLO integration with real YOLO capabilities for production
+-Intelligent Recording: Captures 30-second clips (15s before + 15s after events)
+-Metadata Management: GPS coordinates, confidence scores, timestamps, and event classification
+-Web Interface: Professional Flask dashboard for remote monitoring and management
+-CLI Interface: Command-line tools for system administration and data analysis
+---
 
 # Adding New Event Types
 
@@ -62,3 +63,4 @@ Real YOLO Integration
 Install: pip install ultralytics
 Use RealYOLODetector class in event_detector.py
 Set use_real_yolo=True in system initialization
+---

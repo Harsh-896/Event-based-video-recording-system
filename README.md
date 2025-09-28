@@ -45,3 +45,21 @@ video_recorder_system/
 - Metadata storage
 - Web dashboard to view and manage recordings
 - Configurable settings
+
+# Adding New Event Types
+
+Update EVENT_TYPES in config.py
+Modify detection logic in event_detector.py
+Update web interface trigger buttons
+
+Database Integration
+Replace JSON storage in metadata_manager.py with:
+
+SQLite for development
+PostgreSQL/MySQL for production
+MongoDB for document-based storage
+
+Real YOLO Integration
+Install: pip install ultralytics
+Use RealYOLODetector class in event_detector.py
+Set use_real_yolo=True in system initialization

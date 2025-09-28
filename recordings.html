@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordings - Video Recording System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: #4facfe;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .recordings-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .recordings-table th,
+        .recordings-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .recordings-table th {
+            background-color: #f8f9fa;
+        }
+        .btn {
+            padding: 8px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📹 Recorded Events</h1>
+        
+        <div class="nav">
+            <a href="/">🏠 Dashboard</a>
+            <a href="/recordings">📹 Recordings</a>
+            <a href="/settings">⚙️ Settings</a>
+        </div>
+
+        <div id="loading" class="loading">Loading recordings...</div>
+        
+        <table id="recordingsTable" class="recordings-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Event Type</th>
+                    <th>Date & Time</th>
+                    <th>Confidence</th>
+                    <th>Duration</th>
+                    <th>Size</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="recordingsBody">
+            </tbody>
+        </table>
+
+        <div id="noRecordings" style="display: none; text-align: center; padding: 40px; color: #666;">
+            No recordings found. Start the system to begin recording events.
+        </div>
+    </div>
+
+    <script>
+        async function loadRecordings() {
+            try {
+                const response = await fetch('/api/recordings');
+                const recordings = await response.json();
+                
+                document.getElementById('loading').style.display = 'none';
+                
+                if (recordings.length === 0) {
+                    document.getElementById('noRecordings').style.display = 'block';
+                    return;
+                }
+                
+                const tbody = document.getElementById('recordingsBody');
+                tbody.innerHTML = '';
+                
+                recordings.forEach(recording => {
+                    const row = document.createElement('tr');
+                    const date = new Date(recording.timestamp).toLocaleString();
+                    
+                    row.innerHTML = `
+                        <td>${recording.id}</td>
+                        <td>${recording.event.type.replace('_', ' ').toUpperCase()}</td>
+                        <td>${date}</td>
+                        <td>${(recording.event.confidence * 100).toFixed(1)}%</td>
+                        <td>${recording.duration.toFixed(1)}s</td>
+                        <td>${recording.file_size.toFixed(2)} MB</td>
+                        <td>
+                            <a href="/download/${recording.id}" class="btn">Download</a>
+                        </td>
+                    `;
+                    
+                    tbody.appendChild(row);
+                });
+                
+                document.getElementById('recordingsTable').style.display = 'table';
+                
+            } catch (error) {
+                document.getElementById('loading').innerHTML = 'Error loading recordings: ' + error.message;
+            }
+        }
+        
+        // Load recordings when page loads
+        document.addEventListener('DOMContentLoaded', loadRecordings);
+    </script>
+</body>
+</html>

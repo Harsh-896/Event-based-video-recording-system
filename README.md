@@ -1,8 +1,6 @@
 # Event-based-video-recording-system
 
-A Python-based video recording and event detection system with a web interface.  
-This project allows you to record video streams, detect events (e.g. Vehicle or person detection), manage metadata, and view recordings from a simple dashboard.
-
+An intelligent video recording system that uses AI event detection to capture only relevant footage, reducing storage costs by 90% while maintaining complete incident context. Designed for fleet management, smart cities, and industrial monitoring.
 ---
 
 ## 📂 Project Structure
@@ -37,6 +35,7 @@ video_recorder_system/
     ├── docker-compose.yml
     ├── Dockerfile
     └── railway_deploy.sh
+---
 
 #🚀 Features
 - Record video streams

@@ -6,7 +6,7 @@ This project allows you to record video streams, detect events (e.g. Vehicle or 
 ---
 
 ## 📂 Project Structure
-
+```bash
 video_recorder_system/
 ├── 📁 source_code/
 │   ├── main.py
@@ -37,6 +37,7 @@ video_recorder_system/
     ├── docker-compose.yml
     ├── Dockerfile
     └── railway_deploy.sh
+
 #🚀 Features
 - Record video streams
 - Event detection (e.g., person detected)
